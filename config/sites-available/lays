@@ -1,0 +1,24 @@
+upstream django {
+	server unix:///run/uwsgi/app/lays/socket;
+}
+
+server {
+	listen					80;
+	server_name				.lays.local;
+	charset					utf-8;
+
+	client_max_body_size	75M;
+
+	#location /media  {
+	#    alias				/path/to/your/mysite/media;
+	#}
+
+	#location /static {
+	#    alias				/path/to/your/mysite/static;
+	#}
+
+	location / {
+		uwsgi_pass			django;
+		include				/var/www/html/lays/uwsgi_params;
+	}
+}
