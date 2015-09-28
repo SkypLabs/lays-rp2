@@ -19,6 +19,6 @@ server {
 
 	location / {
 		uwsgi_pass			django;
-		include				/var/www/html/lays/uwsgi_params;
+		include				/etc/nginx/uwsgi_params;
 	}
 }
