@@ -1,6 +1,1 @@
-*.py[co]
-*.db
-*.sqlite*
 *.swp
-__pycache__
-.vagrant
