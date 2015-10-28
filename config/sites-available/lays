@@ -13,9 +13,9 @@ server {
 	#    alias				/path/to/your/mysite/media;
 	#}
 
-	#location /static {
-	#    alias				/path/to/your/mysite/static;
-	#}
+	location /static {
+		alias				/var/www/html/lays-webapp/static;
+	}
 
 	location / {
 		uwsgi_pass			django;
