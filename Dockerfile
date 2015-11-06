@@ -1,5 +1,5 @@
-#FROM docker.io/resin/raspberrypi2-debian:jessie
-FROM docker.io/debian:jessie
+FROM docker.io/resin/rpi-raspbian:jessie
+#FROM docker.io/debian:jessie
 MAINTAINER skyper@skyplabs.net
 
 EXPOSE 80
