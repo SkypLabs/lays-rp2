@@ -23,7 +23,7 @@ RUN rm -f /etc/nginx/sites-enabled/default \
 WORKDIR /var/www/html/lays-webapp
 
 RUN bower install --allow-root
-RUN ["/bin/bash", "-c", "virtualenv /var/www/virtualenv-lays -p python3 && source /var/www/virtualenv-lays/bin/activate && pip install -r /var/www/html/lays-webapp/requirements.txt && deactivate"]
+RUN ["/bin/bash", "-c", "virtualenv /var/www/virtualenv-lays -p python3 && source /var/www/virtualenv-lays/bin/activate && pip install -r /var/www/html/lays-webapp/requirements.txt && python manage.py collectstatic --noinput && deactivate"]
 RUN chown -R www-data:www-data /var/www
 
 CMD ["/bin/bash", "-c", "/etc/init.d/uwsgi start && /usr/sbin/nginx || /usr/sbin/nginx"]
