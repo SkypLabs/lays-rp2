@@ -1,5 +1,5 @@
 FROM docker.io/debian:jessie
-MAINTAINER skyper@skyplabs.net
+MAINTAINER Paul-Emmanuel Raoul <skyper@skyplabs.net>
 
 EXPOSE 80
 

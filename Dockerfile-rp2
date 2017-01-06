@@ -1,5 +1,5 @@
 FROM docker.io/resin/rpi-raspbian:jessie
-MAINTAINER skyper@skyplabs.net
+MAINTAINER Paul-Emmanuel Raoul <skyper@skyplabs.net>
 
 EXPOSE 80
 
