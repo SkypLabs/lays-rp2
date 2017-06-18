@@ -1,6 +1,6 @@
 # LAYS - Web Server
 
-Docker container including Nginx + uWSGI + Django and used by the LAYS project.
+[Docker][docker] container including [Nginx][nginx] + [uWSGI][uwsgi] + [Django][django] and used by the LAYS project.
 
 This project is no more maintened.
 
@@ -8,4 +8,8 @@ This project is no more maintened.
 
 [MIT][MIT]
 
+ [docker]: https://www.docker.com/
+ [nginx]: https://www.nginx.com/
+ [uwsgi]: https://uwsgi-docs.readthedocs.io/en/latest/
+ [django]: https://www.djangoproject.com/
  [MIT]: http://opensource.org/licenses/MIT
